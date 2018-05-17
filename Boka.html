@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Bright Hotel
+    </title>
+    <link rel="stylesheet" type="text/css" href="Stil.css">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    input[type=text], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    .form {
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+     .col-25, .col-75, input[type=submit] {
+       width: 100%;
+       margin-top: 0;
+     }
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img id="header" src="Hotel1.jpg" alt="Hotel">
+      </div>
+      <div class="h1"><h1>Brigth Hotel</h1></div>
+    </div>
+    <nav>
+      <ul class="links">
+        <li><a href="Start.html">Start</a></li>
+        <li class="selected"><a href="Boka.html">Boka</a></li>
+        <li><a href="Hitta.html">Hitta</a></li>
+        <li><a href="Kontakta.html">Kontakta</a></li>
+        <li><a href="Bilder.html">Bilder</a></li>
+      </ul>
+    </nav>
+    <div class="form">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Förnamn</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Efternamn</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Din email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="vuxna">Antal vuxna</label>
+      </div>
+      <div class="col-75">
+        <select id="vuxna" name="vuxna">
+          <option value="1 vuxen">1 vuxen</option>
+          <option value="2 vuxna">2 vuxna</option>
+          <option value="3 vuxna">3 vuxna</option>
+          <option value="4 vuxna">4 vuxna</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="barn">Antal barn</label>
+      </div>
+      <div class="col-75">
+        <select id="barn" name="barn">
+          <option value="1 barn">1 barn</option>
+          <option value="2 barn">2 barn</option>
+          <option value="3 barn">3 barn</option>
+          <option value="4 barn">4 barn</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Boka">
+    </div>
+  </form>
+  </div>
+  <footer>
+    <address>
+      <p>E-post: <a href="mailto:bright_hotel@gmail.com">bright_hotel@gmail.com</a> Tel: 046-63-82-72</p>
+    </address>
+  </footer>
+  </body>
+</html>
